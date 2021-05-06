@@ -15,14 +15,15 @@ function generate() {
     }*/
 
     var data = {
-    	"start": ["#NP# #VP#."],
-    	"NP": ["#Det# #N#", "#Det# #N# that #VP#", "#Det# #Adj# #N#"],
-    	"VP": ["#Vtrans# #NP#", "#Vintr#"],
-    	"Det": ["The", "This", "That"],
-    	"N": ["John Keating", "Bob Harris", "Bruce Wayne", "John Constantine", "Tony Stark", "John Wick", "Sherlock Holmes", "King Leonidas"],
-    	"Adj": ["cool", "lazy", "amazed", "sweet"],
-    	"Vtrans": ["computes", "examines", "helps", "prefers", "sends", "plays with", "messes up with"],
-    	"Vintr": ["coughs", "daydreams", "whines", "slobbers", "appears", "disappears", "exists", "cries", "laughs"]
+    	"start": ["#NP#"],
+    	"NP": ["#N# #AC# #T0##T1##T1# - #T1##T1##T1##T1#"],
+    	/*"VP": ["#Vtrans# #NP#", "#Vintr#"],*/
+    	"N": ["Camila Sin Apellido", "Christopher Sin Apellido", "Patricia Sin Apellido", "Hector Sin Apellido", "Tony Stark", "Eduardo Sin Apellido", "Juan Sin Apellido", "Yoyo Sin Apellido"],
+      "AC": ["(787)", "(939)"],
+      /*"Adj": ["cool", "lazy", "amazed", "sweet"],*/
+      "T0": ["2", "3", "4", "5", "6", "7", "8", "9"],
+    	"T1": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    	/*"T": ["coughs", "daydreams", "whines", "slobbers", "appears", "disappears", "exists", "cries", "laughs"]*/
     }
 
     let grammar = tracery.createGrammar(data);
