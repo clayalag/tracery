@@ -16,10 +16,10 @@ function generate() {
 
     var data = {
     	"start": ["#NP#"],
-    	"NP": ["#N# #AC# #T0##T1##T1# - #T1##T1##T1##T1#"],
+    	"NP": ["#N#: (#AC#) #T0##T1##T1# - #T1##T1##T1##T1#"],
     	/*"VP": ["#Vtrans# #NP#", "#Vintr#"],*/
     	"N": ["Camila Sin Apellido", "Christopher Sin Apellido", "Patricia Sin Apellido", "Hector Sin Apellido", "Tony Stark", "Eduardo Sin Apellido", "Juan Sin Apellido", "Yoyo Sin Apellido"],
-      "AC": ["(787)", "(939)"],
+      "AC": ["787", "939"],
       /*"Adj": ["cool", "lazy", "amazed", "sweet"],*/
       "T0": ["2", "3", "4", "5", "6", "7", "8", "9"],
     	"T1": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
